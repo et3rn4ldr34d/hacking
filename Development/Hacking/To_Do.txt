@@ -1,0 +1,7 @@
+To Do List:
+
+1. Replace optparse in zip cracker
+2. Integrate Automation
+3. String together scripts to make a program
+4. Add CLI options to all scripts
+5. Refactor into Java // C++
