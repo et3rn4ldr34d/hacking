@@ -1,4 +1,5 @@
 # This is a simple password cracking script
+# You will need a dictionary.txt and password.txt file you want to compare
 
 import crypt
 
