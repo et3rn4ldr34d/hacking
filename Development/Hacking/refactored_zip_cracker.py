@@ -1,7 +1,7 @@
 # Demonstration of the zipfile function and cracking implimentation
 # You will need a dictionary.txt file and zip file to crack
 # REFACTORED VERSION
-# Added file selection option
+# Added file selection option using outparse
 
 import zipfile
 import optparse
