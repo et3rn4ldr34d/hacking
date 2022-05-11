@@ -1,4 +1,8 @@
 package main
+import(
+  "fmt"
+  "time"
+)
 
 func f() {
   fmt.Println("f function")
