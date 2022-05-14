@@ -1,0 +1,25 @@
+Linux Notes:
+
+========
+Ownership
+========
+chown
+chgrp
+chmod
+
+chmod 755 <script name>
+
+ugo (users groups owners)
+rwx (read write execute)
+
+#! /bin/bash
+^ This is the shebang for Linux
+
+#! /usr/bin/python3
+^ This is the shebang for python
+
+traceroute
+
+sysctl
+
+crontab -e
