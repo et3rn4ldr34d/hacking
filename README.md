@@ -11,7 +11,7 @@ It will also serve as a sandbox for skilling up and testing code // new language
 ### =======
 
 The idea is to:
-  1. Write out useful programs related to Hacking
+  1. ~~Write out useful programs related to Hacking~~
   2. Refactor the code for efficiency
   3. Rewrite the code in various languages
   4. Integrate Automation

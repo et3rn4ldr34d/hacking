@@ -1,25 +1,28 @@
-# Demonstration of the zipfile function and cracking implimentation
-# You will need a dictionary.txt file and zip file to crack
-# REFACTORED VERSION
-# Added file selection option using outparse
-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import zipfile
 import optparse
 from threading import Thread
 
+"""
+Needs dictionary.txt file to work
+"""
+
 def extractFile(zFile, password):
     try:
         zFile.extractall(pwd=password)
-        print '[+] Password = ' + password + '\n'
+        print '[+] Found password ' + password + '\n'
     except:
         pass
+
+
 def main():
-    parser = optparse.OptionParser("usage%prog "+\
-    "-f <zipfile> -d <dictionary>")
+    parser = optparse.OptionParser("usage %prog "+\
+      "-f <zipfile> -d <dictionary>")
     parser.add_option('-f', dest='zname', type='string',\
-    help='specify zip file')
+      help='specify zip file')
     parser.add_option('-d', dest='dname', type='string',\
-    help='specifiy dictionary file')
+      help='specify dictionary file')
     (options, args) = parser.parse_args()
     if (options.zname == None) | (options.dname == None):
         print parser.usage
@@ -27,11 +30,15 @@ def main():
     else:
         zname = options.zname
         dname = options.dname
+
     zFile = zipfile.ZipFile(zname)
     passFile = open(dname)
+
     for line in passFile.readlines():
         password = line.strip('\n')
         t = Thread(target=extractFile, args=(zFile, password))
         t.start()
+
+
 if __name__ == '__main__':
     main()

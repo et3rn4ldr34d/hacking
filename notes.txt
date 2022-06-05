@@ -1,4 +1,4 @@
-Linux Notes:
+||||||||   Linux Notes:   ||||||||
 
 ========
 Ownership
@@ -23,3 +23,19 @@ traceroute
 sysctl
 
 crontab -e
+
+||||||||   Python Notes:   ||||||||
+
+========
+Libraries
+========
+optparse
+nmap
+datetime
+pxssh
+pexpect
+crypt
+zipfile
+ftplib
+_winreg
+threading
