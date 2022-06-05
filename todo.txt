@@ -1,0 +1,14 @@
+To Do:
+
+[*] Redo Methodology
+
+[+] Process all files and organize
+[+] Refine scripts
+[+] Chain tools
+[+] Automate Vulnerabilities
+[+] Parse Interface
+[+] Refactor into Go
+[+] Break up Monolith into FaaS
+[+] Containerize
+[+] Write Control Script
+[+] Automate Report Composition // Remedial Suggestions
