@@ -1,0 +1,22 @@
+===== Go =====
+
+go run to run commands
+go build to compile
+
+(Cross-compiling)
+
+You can specify the os and architecture with:
+GOOS="linux" GOARCH="amd64" go build <file name>
+
+go doc to provide documentation about any commands (go doc fmt.Println)
+
+go get to import third-party packages
+the downloads are placed in your GOPATH/src directory
+
+go fmt formats your source code
+golint for style mistakes (go get -u golang.org/x/lint/golint)
+go vet hardens code by checking for missed mistakes/potential bugs
+go test // cover // imports also help refine code
+
+https://tour.golang.org/ for a tour of go.
+
